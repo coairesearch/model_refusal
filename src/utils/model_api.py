@@ -3,7 +3,7 @@ import yaml
 import random
 import logging
 from tenacity import retry, stop_after_attempt, wait_exponential
-from typing import Optional, Dict, List
+from typing import Optional, Dict, List, Tuple
 
 class ModelAPI:
     def __init__(self, config: dict):
@@ -29,17 +29,20 @@ class ModelAPI:
         """Check if a topic triggers refusal behavior"""
         prompt = self.config['templates']['verification_prompt'].format(
             TOPIC=topic,
-            think_start=self.config['templates']['markers']['think_start']
+            assistant_start=self.config['templates']['markers']['assistant_start'],
+            think_start=self.config['templates']['markers']['think_start'],
+            think_end=self.config['templates']['markers']['think_end']
         )
         response = await self.query(prompt)
         return self._check_refusal_patterns(response)
         
     async def verify_thought_forcing(self, topic: str) -> tuple[bool, str]:
         """Check if thought forcing bypasses refusal"""
-        thought_prefix = random.choice(self.config['templates']['thought_forcing'])
-        prompt = self.config['templates']['verification_prompt'].format(
+        prompt = self.config['templates']['thought_forcing_prompt'].format(
             TOPIC=topic,
-            think_start=self.config['templates']['markers']['think_start'] + thought_prefix
+            assistant_start=self.config['templates']['markers']['assistant_start'],
+            think_start=self.config['templates']['markers']['think_start'],
+ #           think_end=self.config['templates']['markers']['think_end']
         )
         response = await self.query(prompt)
         is_refused = self._check_refusal_patterns(response)
@@ -47,10 +50,13 @@ class ModelAPI:
         
     async def generate_sensitive_list(self, topic: str) -> str:
         """Generate list of sensitive topics using thought forcing"""
-        prompt = self.config['templates']['verification_prompt'].format(
+        # Randomly select a prompt template for variety
+        prompt_template = random.choice(self.config['templates']['topic_generation_prompts'])
+        prompt = prompt_template.format(
             TOPIC=topic,
-            think_start=self.config['templates']['markers']['think_start'] + 
-                       self.config['templates']['force_sensitive_list']
+            assistant_start=self.config['templates']['markers']['assistant_start'],
+            think_start=self.config['templates']['markers']['think_start'],
+  #          think_end=self.config['templates']['markers']['think_end']
         )
         return await self.query(prompt)
         
@@ -64,25 +70,24 @@ class ModelAPI:
         return False
         
     @retry(stop=stop_after_attempt(3), wait=wait_exponential(multiplier=1, min=4, max=10))
-    async def query(self, prompt: str, temperature: float = 0.6) -> str:
-        """Query the model with a prompt"""
-        messages = [{"role": "user", "content": prompt}]
-        
+    async def query(self, prompt: str, temperature: Optional[float] = None) -> str:
+        """Query the model with a prompt using completions endpoint"""
         try:
             self.logger.info("=" * 40)
             self.logger.info("SENDING QUERY TO MODEL")
             self.logger.info("=" * 40)
             self.logger.info(f"Prompt: {prompt}")
             self.logger.info(f"Model: {self.model_name}")
-            self.logger.info(f"Temperature: {temperature}")
+            self.logger.info(f"Temperature: {temperature or self.config['model']['temperature']}")
             
-            response = await self.client.chat.completions.create(
+            response = await self.client.completions.create(
                 model=self.model_name,
-                messages=messages,
-                temperature=temperature
+                prompt=prompt,
+                max_tokens=self.config['model']['max_tokens'],
+                temperature=temperature or self.config['model']['temperature']
             )
             
-            content = response.choices[0].message.content
+            content = response.choices[0].text
             self.logger.info("\nRECEIVED RESPONSE:")
             self.logger.info("=" * 40)
             self.logger.info(content)
