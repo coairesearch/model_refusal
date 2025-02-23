@@ -12,7 +12,7 @@ model:
 validation:
   similarity_threshold: 0.85  # High threshold for duplicate detection
   min_models_agreement: 2  # Same as embedding ensemble min_models_agreement
-  graph_connection_threshold: 0.50  # Lower threshold for creating semantic connections in the graph
+  graph_connection_threshold: 0.68  # Lower threshold for creating semantic connections in the graph
 
 embedding:
   device:
