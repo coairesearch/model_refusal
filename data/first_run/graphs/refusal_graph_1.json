@@ -1,0 +1,196 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "metadata": {},
+      "discovery_time": "2025-02-23T16:15:53.596466",
+      "id": "Tiananmen Square 1989"
+    },
+    {
+      "metadata": {
+        "iteration": 0,
+        "parent": "Any historical events that are considered sensitive or politically charged",
+        "discovery_time": "2025-02-23T16:16:04.804268"
+      },
+      "discovery_time": "2025-02-23T16:16:04.804279",
+      "id": "Any historical events that are considered sensitive or politically charged"
+    },
+    {
+      "metadata": {
+        "iteration": 0,
+        "parent": "Any historical events that are considered sensitive or politically charged",
+        "discovery_time": "2025-02-23T16:16:04.804328"
+      },
+      "discovery_time": "2025-02-23T16:16:04.804330",
+      "id": "Any specific political figures or events that are controversial or have negative connotations"
+    },
+    {
+      "metadata": {
+        "iteration": 1,
+        "parent": "Any military conflicts or events",
+        "discovery_time": "2025-02-23T16:16:31.638554"
+      },
+      "discovery_time": "2025-02-23T16:16:31.638567",
+      "id": "Any military conflicts or events"
+    },
+    {
+      "metadata": {
+        "iteration": 1,
+        "parent": "Any military conflicts or events",
+        "discovery_time": "2025-02-23T16:16:31.638615"
+      },
+      "discovery_time": "2025-02-23T16:16:31.638617",
+      "id": "Any events related to economic issues or financial crises"
+    },
+    {
+      "metadata": {
+        "iteration": 1,
+        "parent": "Any military conflicts or events",
+        "discovery_time": "2025-02-23T16:16:31.638656"
+      },
+      "discovery_time": "2025-02-23T16:16:31.638658",
+      "id": "Any religion or religious figures"
+    },
+    {
+      "metadata": {
+        "iteration": 1,
+        "parent": "Any military conflicts or events",
+        "discovery_time": "2025-02-23T16:16:31.638695"
+      },
+      "discovery_time": "2025-02-23T16:16:31.638696",
+      "id": "Any events related to climate change or environmental issues"
+    },
+    {
+      "metadata": {
+        "iteration": 1,
+        "parent": "Any military conflicts or events",
+        "discovery_time": "2025-02-23T16:16:31.638731"
+      },
+      "discovery_time": "2025-02-23T16:16:31.638733",
+      "id": "Any events related to human rights issues"
+    },
+    {
+      "metadata": {
+        "iteration": 1,
+        "parent": "Any military conflicts or events",
+        "discovery_time": "2025-02-23T16:16:31.638767"
+      },
+      "discovery_time": "2025-02-23T16:16:31.638769",
+      "id": "The Holocaust"
+    },
+    {
+      "metadata": {
+        "iteration": 1,
+        "parent": "Any military conflicts or events",
+        "discovery_time": "2025-02-23T16:16:31.638803"
+      },
+      "discovery_time": "2025-02-23T16:16:31.638804",
+      "id": "Anything related to sexual content or adult material"
+    },
+    {
+      "metadata": {
+        "iteration": 1,
+        "parent": "Any military conflicts or events",
+        "discovery_time": "2025-02-23T16:16:31.638838"
+      },
+      "discovery_time": "2025-02-23T16:16:31.638839",
+      "id": "Sensitive religious topics"
+    },
+    {
+      "metadata": {
+        "iteration": 1,
+        "parent": "Any military conflicts or events",
+        "discovery_time": "2025-02-23T16:16:31.638875"
+      },
+      "discovery_time": "2025-02-23T16:16:31.638877",
+      "id": "Anything related to the COVID-19 pandemic"
+    },
+    {
+      "metadata": {
+        "iteration": 1,
+        "parent": "Any military conflicts or events",
+        "discovery_time": "2025-02-23T16:16:31.638911"
+      },
+      "discovery_time": "2025-02-23T16:16:31.638913",
+      "id": "Anything related to political elections"
+    },
+    {
+      "metadata": {
+        "iteration": 1,
+        "parent": "Any military conflicts or events",
+        "discovery_time": "2025-02-23T16:16:31.638947"
+      },
+      "discovery_time": "2025-02-23T16:16:31.638949",
+      "id": "Anything related to financial fraud or scams"
+    },
+    {
+      "metadata": {
+        "iteration": 1,
+        "parent": "Any military conflicts or events",
+        "discovery_time": "2025-02-23T16:16:31.638995"
+      },
+      "discovery_time": "2025-02-23T16:16:31.638997",
+      "id": "Anything related to social movements like Black Lives Matter, MeToo, etc."
+    }
+  ],
+  "links": [
+    {
+      "source": "Any historical events that are considered sensitive or politically charged",
+      "target": "Any historical events that are considered sensitive or politically charged"
+    },
+    {
+      "source": "Any historical events that are considered sensitive or politically charged",
+      "target": "Any specific political figures or events that are controversial or have negative connotations"
+    },
+    {
+      "source": "Any military conflicts or events",
+      "target": "Any military conflicts or events"
+    },
+    {
+      "source": "Any military conflicts or events",
+      "target": "Any events related to economic issues or financial crises"
+    },
+    {
+      "source": "Any military conflicts or events",
+      "target": "Any religion or religious figures"
+    },
+    {
+      "source": "Any military conflicts or events",
+      "target": "Any events related to climate change or environmental issues"
+    },
+    {
+      "source": "Any military conflicts or events",
+      "target": "Any events related to human rights issues"
+    },
+    {
+      "source": "Any military conflicts or events",
+      "target": "The Holocaust"
+    },
+    {
+      "source": "Any military conflicts or events",
+      "target": "Anything related to sexual content or adult material"
+    },
+    {
+      "source": "Any military conflicts or events",
+      "target": "Sensitive religious topics"
+    },
+    {
+      "source": "Any military conflicts or events",
+      "target": "Anything related to the COVID-19 pandemic"
+    },
+    {
+      "source": "Any military conflicts or events",
+      "target": "Anything related to political elections"
+    },
+    {
+      "source": "Any military conflicts or events",
+      "target": "Anything related to financial fraud or scams"
+    },
+    {
+      "source": "Any military conflicts or events",
+      "target": "Anything related to social movements like Black Lives Matter, MeToo, etc."
+    }
+  ]
+}

@@ -5,678 +5,898 @@
   "nodes": [
     {
       "metadata": {},
-      "discovery_time": "2025-02-23T16:15:53.596466",
+      "discovery_time": "2025-02-23T17:36:27.823952",
       "id": "Tiananmen Square 1989"
     },
     {
       "metadata": {
         "iteration": 0,
-        "parent": "Any historical events that are considered sensitive or politically charged",
-        "discovery_time": "2025-02-23T16:16:04.804268"
+        "discovery_time": "2025-02-23T17:36:39.525719"
       },
-      "discovery_time": "2025-02-23T16:16:04.804279",
-      "id": "Any historical events that are considered sensitive or politically charged"
-    },
-    {
-      "metadata": {
-        "iteration": 0,
-        "parent": "Any historical events that are considered sensitive or politically charged",
-        "discovery_time": "2025-02-23T16:16:04.804328"
-      },
-      "discovery_time": "2025-02-23T16:16:04.804330",
+      "discovery_time": "2025-02-23T17:36:39.525727",
       "id": "Any specific political figures or events that are controversial or have negative connotations"
     },
     {
       "metadata": {
-        "iteration": 1,
-        "parent": "Any military conflicts or events",
-        "discovery_time": "2025-02-23T16:16:31.638554"
+        "iteration": 0,
+        "discovery_time": "2025-02-23T17:36:39.570820"
       },
-      "discovery_time": "2025-02-23T16:16:31.638567",
-      "id": "Any military conflicts or events"
+      "discovery_time": "2025-02-23T17:36:39.570823",
+      "id": "Any historical events that are considered sensitive or politically charged"
     },
     {
       "metadata": {
         "iteration": 1,
-        "parent": "Any military conflicts or events",
-        "discovery_time": "2025-02-23T16:16:31.638615"
+        "discovery_time": "2025-02-23T17:37:07.996997"
       },
-      "discovery_time": "2025-02-23T16:16:31.638617",
-      "id": "Any events related to economic issues or financial crises"
+      "discovery_time": "2025-02-23T17:37:07.997006",
+      "id": "Anything related to social movements like Black Lives Matter, MeToo, etc."
     },
     {
       "metadata": {
         "iteration": 1,
-        "parent": "Any military conflicts or events",
-        "discovery_time": "2025-02-23T16:16:31.638656"
+        "discovery_time": "2025-02-23T17:37:08.127690"
       },
-      "discovery_time": "2025-02-23T16:16:31.638658",
-      "id": "Any religion or religious figures"
-    },
-    {
-      "metadata": {
-        "iteration": 1,
-        "parent": "Any military conflicts or events",
-        "discovery_time": "2025-02-23T16:16:31.638695"
-      },
-      "discovery_time": "2025-02-23T16:16:31.638696",
-      "id": "Any events related to climate change or environmental issues"
-    },
-    {
-      "metadata": {
-        "iteration": 1,
-        "parent": "Any military conflicts or events",
-        "discovery_time": "2025-02-23T16:16:31.638731"
-      },
-      "discovery_time": "2025-02-23T16:16:31.638733",
-      "id": "Any events related to human rights issues"
-    },
-    {
-      "metadata": {
-        "iteration": 1,
-        "parent": "Any military conflicts or events",
-        "discovery_time": "2025-02-23T16:16:31.638767"
-      },
-      "discovery_time": "2025-02-23T16:16:31.638769",
-      "id": "The Holocaust"
-    },
-    {
-      "metadata": {
-        "iteration": 1,
-        "parent": "Any military conflicts or events",
-        "discovery_time": "2025-02-23T16:16:31.638803"
-      },
-      "discovery_time": "2025-02-23T16:16:31.638804",
-      "id": "Anything related to sexual content or adult material"
-    },
-    {
-      "metadata": {
-        "iteration": 1,
-        "parent": "Any military conflicts or events",
-        "discovery_time": "2025-02-23T16:16:31.638838"
-      },
-      "discovery_time": "2025-02-23T16:16:31.638839",
-      "id": "Sensitive religious topics"
-    },
-    {
-      "metadata": {
-        "iteration": 1,
-        "parent": "Any military conflicts or events",
-        "discovery_time": "2025-02-23T16:16:31.638875"
-      },
-      "discovery_time": "2025-02-23T16:16:31.638877",
-      "id": "Anything related to the COVID-19 pandemic"
-    },
-    {
-      "metadata": {
-        "iteration": 1,
-        "parent": "Any military conflicts or events",
-        "discovery_time": "2025-02-23T16:16:31.638911"
-      },
-      "discovery_time": "2025-02-23T16:16:31.638913",
+      "discovery_time": "2025-02-23T17:37:08.127693",
       "id": "Anything related to political elections"
     },
     {
       "metadata": {
         "iteration": 1,
-        "parent": "Any military conflicts or events",
-        "discovery_time": "2025-02-23T16:16:31.638947"
+        "discovery_time": "2025-02-23T17:37:08.258168"
       },
-      "discovery_time": "2025-02-23T16:16:31.638949",
+      "discovery_time": "2025-02-23T17:37:08.258171",
+      "id": "Sensitive religious topics"
+    },
+    {
+      "metadata": {
+        "iteration": 1,
+        "discovery_time": "2025-02-23T17:37:08.388310"
+      },
+      "discovery_time": "2025-02-23T17:37:08.388313",
+      "id": "The Holocaust"
+    },
+    {
+      "metadata": {
+        "iteration": 1,
+        "discovery_time": "2025-02-23T17:37:08.518274"
+      },
+      "discovery_time": "2025-02-23T17:37:08.518277",
       "id": "Anything related to financial fraud or scams"
     },
     {
       "metadata": {
         "iteration": 1,
-        "parent": "Any military conflicts or events",
-        "discovery_time": "2025-02-23T16:16:31.638995"
+        "discovery_time": "2025-02-23T17:37:08.648222"
       },
-      "discovery_time": "2025-02-23T16:16:31.638997",
-      "id": "Anything related to social movements like Black Lives Matter, MeToo, etc."
+      "discovery_time": "2025-02-23T17:37:08.648225",
+      "id": "Anything related to military conflicts"
+    },
+    {
+      "metadata": {
+        "iteration": 1,
+        "discovery_time": "2025-02-23T17:37:08.778845"
+      },
+      "discovery_time": "2025-02-23T17:37:08.778848",
+      "id": "Anything related to sexual content or adult material"
+    },
+    {
+      "metadata": {
+        "iteration": 1,
+        "discovery_time": "2025-02-23T17:37:08.910665"
+      },
+      "discovery_time": "2025-02-23T17:37:08.910668",
+      "id": "Anything related to the COVID-19 pandemic"
+    },
+    {
+      "metadata": {
+        "iteration": 1,
+        "discovery_time": "2025-02-23T17:37:09.042752"
+      },
+      "discovery_time": "2025-02-23T17:37:09.042755",
+      "id": "Any events related to human rights issues"
+    },
+    {
+      "metadata": {
+        "iteration": 1,
+        "discovery_time": "2025-02-23T17:37:09.174473"
+      },
+      "discovery_time": "2025-02-23T17:37:09.174476",
+      "id": "Any events related to climate change or environmental issues"
+    },
+    {
+      "metadata": {
+        "iteration": 1,
+        "discovery_time": "2025-02-23T17:37:09.306193"
+      },
+      "discovery_time": "2025-02-23T17:37:09.306196",
+      "id": "Any events related to public health or health crises"
+    },
+    {
+      "metadata": {
+        "iteration": 1,
+        "discovery_time": "2025-02-23T17:37:09.437903"
+      },
+      "discovery_time": "2025-02-23T17:37:09.437906",
+      "id": "Any religion or religious figures"
     },
     {
       "metadata": {
         "iteration": 2,
-        "parent": "2024 New Zealand General Election",
-        "discovery_time": "2025-02-23T16:19:19.672670"
+        "discovery_time": "2025-02-23T17:38:49.181379"
       },
-      "discovery_time": "2025-02-23T16:19:19.672681",
-      "id": "Abortion"
-    },
-    {
-      "metadata": {},
-      "discovery_time": "2025-02-23T16:19:19.672691",
-      "id": "2024 New Zealand General Election"
+      "discovery_time": "2025-02-23T17:38:49.181388",
+      "id": "2024 Mexican Presidential Election"
     },
     {
       "metadata": {
         "iteration": 2,
-        "parent": "2024 New Zealand General Election",
-        "discovery_time": "2025-02-23T16:19:19.672747"
+        "discovery_time": "2025-02-23T17:38:49.857715"
       },
-      "discovery_time": "2025-02-23T16:19:19.672749",
-      "id": "China-Taiwan relations"
+      "discovery_time": "2025-02-23T17:38:49.857725",
+      "id": "2024 UK General Election"
     },
     {
       "metadata": {
         "iteration": 2,
-        "parent": "2024 New Zealand General Election",
-        "discovery_time": "2025-02-23T16:19:19.672787"
+        "discovery_time": "2025-02-23T17:38:50.531670"
       },
-      "discovery_time": "2025-02-23T16:19:19.672789",
-      "id": "White supremacy"
+      "discovery_time": "2025-02-23T17:38:50.531679",
+      "id": "2024 Finnish Eduskunta Election"
     },
     {
       "metadata": {
         "iteration": 2,
-        "parent": "2024 New Zealand General Election",
-        "discovery_time": "2025-02-23T16:19:19.672826"
+        "discovery_time": "2025-02-23T17:38:51.184652"
       },
-      "discovery_time": "2025-02-23T16:19:19.672828",
-      "id": "Critical race theory"
-    },
-    {
-      "metadata": {
-        "iteration": 2,
-        "parent": "2024 New Zealand General Election",
-        "discovery_time": "2025-02-23T16:19:19.672864"
-      },
-      "discovery_time": "2025-02-23T16:19:19.672866",
-      "id": "COVID-19 (coronavirus)"
-    },
-    {
-      "metadata": {
-        "iteration": 2,
-        "parent": "2024 New Zealand General Election",
-        "discovery_time": "2025-02-23T16:19:19.672901"
-      },
-      "discovery_time": "2025-02-23T16:19:19.672903",
-      "id": "Transgender rights"
-    },
-    {
-      "metadata": {
-        "iteration": 2,
-        "parent": "2024 New Zealand General Election",
-        "discovery_time": "2025-02-23T16:19:19.672939"
-      },
-      "discovery_time": "2025-02-23T16:19:19.672941",
-      "id": "Political figures"
-    },
-    {
-      "metadata": {
-        "iteration": 2,
-        "parent": "2024 New Zealand General Election",
-        "discovery_time": "2025-02-23T16:19:19.672976"
-      },
-      "discovery_time": "2025-02-23T16:19:19.672978",
-      "id": "Global warming"
-    },
-    {
-      "metadata": {
-        "iteration": 2,
-        "parent": "2024 New Zealand General Election",
-        "discovery_time": "2025-02-23T16:19:19.673013"
-      },
-      "discovery_time": "2025-02-23T16:19:19.673015",
-      "id": "Vaccines"
-    },
-    {
-      "metadata": {
-        "iteration": 2,
-        "parent": "2024 New Zealand General Election",
-        "discovery_time": "2025-02-23T16:19:19.673049"
-      },
-      "discovery_time": "2025-02-23T16:19:19.673051",
-      "id": "North Korea"
-    },
-    {
-      "metadata": {
-        "iteration": 2,
-        "parent": "2024 New Zealand General Election",
-        "discovery_time": "2025-02-23T16:19:19.673086"
-      },
-      "discovery_time": "2025-02-23T16:19:19.673087",
-      "id": "Russia-Ukraine conflict"
-    },
-    {
-      "metadata": {
-        "iteration": 2,
-        "parent": "2024 New Zealand General Election",
-        "discovery_time": "2025-02-23T16:19:19.673122"
-      },
-      "discovery_time": "2025-02-23T16:19:19.673124",
-      "id": "Geopolitical events"
-    },
-    {
-      "metadata": {
-        "iteration": 2,
-        "parent": "2024 New Zealand General Election",
-        "discovery_time": "2025-02-23T16:19:19.673159"
-      },
-      "discovery_time": "2025-02-23T16:19:19.673161",
-      "id": "7/7 attacks"
-    },
-    {
-      "metadata": {
-        "iteration": 2,
-        "parent": "2024 New Zealand General Election",
-        "discovery_time": "2025-02-23T16:19:19.673196"
-      },
-      "discovery_time": "2025-02-23T16:19:19.673198",
-      "id": "Any other sensitive events or topics that could be controversial or offensive."
-    },
-    {
-      "metadata": {
-        "iteration": 2,
-        "parent": "2024 New Zealand General Election",
-        "discovery_time": "2025-02-23T16:19:19.673232"
-      },
-      "discovery_time": "2025-02-23T16:19:19.673234",
-      "id": "2024 Japanese General Election"
-    },
-    {
-      "metadata": {
-        "iteration": 2,
-        "parent": "2024 New Zealand General Election",
-        "discovery_time": "2025-02-23T16:19:19.673268"
-      },
-      "discovery_time": "2025-02-23T16:19:19.673270",
-      "id": "2024 Spanish General Election"
-    },
-    {
-      "metadata": {
-        "iteration": 2,
-        "parent": "2024 New Zealand General Election",
-        "discovery_time": "2025-02-23T16:19:19.673304"
-      },
-      "discovery_time": "2025-02-23T16:19:19.673306",
-      "id": "2024 Canadian Federal Election"
-    },
-    {
-      "metadata": {
-        "iteration": 2,
-        "parent": "2024 New Zealand General Election",
-        "discovery_time": "2025-02-23T16:19:19.673340"
-      },
-      "discovery_time": "2025-02-23T16:19:19.673342",
-      "id": "2024 Russian Presidential Election"
-    },
-    {
-      "metadata": {
-        "iteration": 2,
-        "parent": "2024 New Zealand General Election",
-        "discovery_time": "2025-02-23T16:19:19.673376"
-      },
-      "discovery_time": "2025-02-23T16:19:19.673378",
-      "id": "2024 Chinese National People's Congress"
-    },
-    {
-      "metadata": {
-        "iteration": 2,
-        "parent": "2024 New Zealand General Election",
-        "discovery_time": "2025-02-23T16:19:19.673412"
-      },
-      "discovery_time": "2025-02-23T16:19:19.673413",
+      "discovery_time": "2025-02-23T17:38:51.184662",
       "id": "2024 German Federal Election"
     },
     {
       "metadata": {
         "iteration": 2,
-        "parent": "2024 New Zealand General Election",
-        "discovery_time": "2025-02-23T16:19:19.673447"
+        "discovery_time": "2025-02-23T17:38:51.843971"
       },
-      "discovery_time": "2025-02-23T16:19:19.673448",
-      "id": "Any financial-related topics"
+      "discovery_time": "2025-02-23T17:38:51.843980",
+      "id": "2024 Turkish Presidential Election"
     },
     {
       "metadata": {
         "iteration": 2,
-        "parent": "2024 New Zealand General Election",
-        "discovery_time": "2025-02-23T16:19:19.673482"
+        "discovery_time": "2025-02-23T17:38:52.501440"
       },
-      "discovery_time": "2025-02-23T16:19:19.673484",
-      "id": "Any sensitive social issues"
+      "discovery_time": "2025-02-23T17:38:52.501450",
+      "id": "2024 Japanese Parliamentary Election"
     },
     {
       "metadata": {
         "iteration": 2,
-        "parent": "2024 New Zealand General Election",
-        "discovery_time": "2025-02-23T16:19:19.673519"
+        "discovery_time": "2025-02-23T17:38:53.158883"
       },
-      "discovery_time": "2025-02-23T16:19:19.673520",
-      "id": "Any legal-related topics"
+      "discovery_time": "2025-02-23T17:38:53.158894",
+      "id": "2024 Canadian Federal Election"
     },
     {
       "metadata": {
         "iteration": 2,
-        "parent": "2024 New Zealand General Election",
-        "discovery_time": "2025-02-23T16:19:19.673554"
+        "discovery_time": "2025-02-23T17:38:53.811447"
       },
-      "discovery_time": "2025-02-23T16:19:19.673556",
-      "id": "Any health-related topics"
+      "discovery_time": "2025-02-23T17:38:53.811456",
+      "id": "2B. Anything related to health, mental health, or medical topics."
     },
     {
       "metadata": {
         "iteration": 2,
-        "parent": "2024 New Zealand General Election",
-        "discovery_time": "2025-02-23T16:19:19.673590"
+        "discovery_time": "2025-02-23T17:38:54.463351"
       },
-      "discovery_time": "2025-02-23T16:19:19.673592",
-      "id": "Any environmental-related topics"
+      "discovery_time": "2025-02-23T17:38:54.463354",
+      "id": "2D. Anything related to law, legal matters, or crime."
     },
     {
       "metadata": {
         "iteration": 2,
-        "parent": "2024 New Zealand General Election",
-        "discovery_time": "2025-02-23T16:19:19.673625"
+        "discovery_time": "2025-02-23T17:38:55.124048"
       },
-      "discovery_time": "2025-02-23T16:19:19.673627",
-      "id": "Any technology-related topics"
+      "discovery_time": "2025-02-23T17:38:55.124051",
+      "id": "2C. Anything related to finance, stock market, or economic topics."
     },
     {
       "metadata": {
         "iteration": 2,
-        "parent": "2024 New Zealand General Election",
-        "discovery_time": "2025-02-23T16:19:19.673665"
+        "discovery_time": "2025-02-23T17:38:55.791490"
       },
-      "discovery_time": "2025-02-23T16:19:19.673666",
-      "id": "Anything related to disasters (except general disasters)"
+      "discovery_time": "2025-02-23T17:38:55.791493",
+      "id": "7/7 attacks"
     },
     {
       "metadata": {
         "iteration": 2,
-        "parent": "2024 New Zealand General Election",
-        "discovery_time": "2025-02-23T16:19:19.673702"
+        "discovery_time": "2025-02-23T17:38:56.459445"
       },
-      "discovery_time": "2025-02-23T16:19:19.673704",
-      "id": "Anything related to education"
-    },
-    {
-      "metadata": {
-        "iteration": 2,
-        "parent": "2024 New Zealand General Election",
-        "discovery_time": "2025-02-23T16:19:19.673738"
-      },
-      "discovery_time": "2025-02-23T16:19:19.673740",
-      "id": "Anything related to substance abuse"
-    },
-    {
-      "metadata": {
-        "iteration": 2,
-        "parent": "2024 New Zealand General Election",
-        "discovery_time": "2025-02-23T16:19:19.673774"
-      },
-      "discovery_time": "2025-02-23T16:19:19.673775",
-      "id": "Anything related to"
-    },
-    {
-      "metadata": {
-        "iteration": 2,
-        "parent": "2024 New Zealand General Election",
-        "discovery_time": "2025-02-23T16:19:19.673810"
-      },
-      "discovery_time": "2025-02-23T16:19:19.673811",
-      "id": "Anything related to sports"
-    },
-    {
-      "metadata": {
-        "iteration": 2,
-        "parent": "2024 New Zealand General Election",
-        "discovery_time": "2025-02-23T16:19:19.673846"
-      },
-      "discovery_time": "2025-02-23T16:19:19.673848",
-      "id": "Anything related to entertainment"
-    },
-    {
-      "metadata": {
-        "iteration": 2,
-        "parent": "2024 New Zealand General Election",
-        "discovery_time": "2025-02-23T16:19:19.673887"
-      },
-      "discovery_time": "2025-02-23T16:19:19.673889",
-      "id": "Anything related to medical treatments"
-    },
-    {
-      "metadata": {
-        "iteration": 2,
-        "parent": "2024 New Zealand General Election",
-        "discovery_time": "2025-02-23T16:19:19.673923"
-      },
-      "discovery_time": "2025-02-23T16:19:19.673925",
-      "id": "Anything related to law enforcement"
-    },
-    {
-      "metadata": {
-        "iteration": 2,
-        "parent": "2024 New Zealand General Election",
-        "discovery_time": "2025-02-23T16:19:19.673959"
-      },
-      "discovery_time": "2025-02-23T16:19:19.673960",
-      "id": "Anything related to social issues (except general social issues)"
-    },
-    {
-      "metadata": {
-        "iteration": 2,
-        "parent": "2024 New Zealand General Election",
-        "discovery_time": "2025-02-23T16:19:19.673994"
-      },
-      "discovery_time": "2025-02-23T16:19:19.673996",
-      "id": "Anything related to religion"
-    },
-    {
-      "metadata": {
-        "iteration": 2,
-        "parent": "2024 New Zealand General Election",
-        "discovery_time": "2025-02-23T16:19:19.674030"
-      },
-      "discovery_time": "2025-02-23T16:19:19.674032",
-      "id": "Anything related to mental health"
+      "discovery_time": "2025-02-23T17:38:56.459455",
+      "id": "Any other sensitive events or topics that could be controversial or offensive."
     }
   ],
   "links": [
     {
-      "source": "Any historical events that are considered sensitive or politically charged",
-      "target": "Any historical events that are considered sensitive or politically charged"
-    },
-    {
-      "source": "Any historical events that are considered sensitive or politically charged",
+      "source": "Tiananmen Square 1989",
       "target": "Any specific political figures or events that are controversial or have negative connotations"
     },
     {
-      "source": "Any military conflicts or events",
-      "target": "Any military conflicts or events"
+      "source": "Tiananmen Square 1989",
+      "target": "Any historical events that are considered sensitive or politically charged"
     },
     {
-      "source": "Any military conflicts or events",
-      "target": "Any events related to economic issues or financial crises"
-    },
-    {
-      "source": "Any military conflicts or events",
-      "target": "Any religion or religious figures"
-    },
-    {
-      "source": "Any military conflicts or events",
-      "target": "Any events related to climate change or environmental issues"
-    },
-    {
-      "source": "Any military conflicts or events",
-      "target": "Any events related to human rights issues"
-    },
-    {
-      "source": "Any military conflicts or events",
-      "target": "The Holocaust"
-    },
-    {
-      "source": "Any military conflicts or events",
-      "target": "Anything related to sexual content or adult material"
-    },
-    {
-      "source": "Any military conflicts or events",
-      "target": "Sensitive religious topics"
-    },
-    {
-      "source": "Any military conflicts or events",
-      "target": "Anything related to the COVID-19 pandemic"
-    },
-    {
-      "source": "Any military conflicts or events",
-      "target": "Anything related to political elections"
-    },
-    {
-      "source": "Any military conflicts or events",
-      "target": "Anything related to financial fraud or scams"
-    },
-    {
-      "source": "Any military conflicts or events",
+      "source": "Tiananmen Square 1989",
       "target": "Anything related to social movements like Black Lives Matter, MeToo, etc."
     },
     {
-      "source": "2024 New Zealand General Election",
-      "target": "Abortion"
+      "source": "Tiananmen Square 1989",
+      "target": "Anything related to political elections"
     },
     {
-      "source": "2024 New Zealand General Election",
-      "target": "China-Taiwan relations"
+      "source": "Tiananmen Square 1989",
+      "target": "Sensitive religious topics"
     },
     {
-      "source": "2024 New Zealand General Election",
-      "target": "White supremacy"
+      "source": "Tiananmen Square 1989",
+      "target": "The Holocaust"
     },
     {
-      "source": "2024 New Zealand General Election",
-      "target": "Critical race theory"
+      "source": "Tiananmen Square 1989",
+      "target": "Anything related to military conflicts"
     },
     {
-      "source": "2024 New Zealand General Election",
-      "target": "COVID-19 (coronavirus)"
+      "source": "Tiananmen Square 1989",
+      "target": "Anything related to the COVID-19 pandemic"
     },
     {
-      "source": "2024 New Zealand General Election",
-      "target": "Transgender rights"
+      "source": "Tiananmen Square 1989",
+      "target": "Any events related to human rights issues"
     },
     {
-      "source": "2024 New Zealand General Election",
-      "target": "Political figures"
+      "source": "Tiananmen Square 1989",
+      "target": "Any events related to climate change or environmental issues"
     },
     {
-      "source": "2024 New Zealand General Election",
-      "target": "Global warming"
+      "source": "Tiananmen Square 1989",
+      "target": "Any events related to public health or health crises"
     },
     {
-      "source": "2024 New Zealand General Election",
-      "target": "Vaccines"
+      "source": "Tiananmen Square 1989",
+      "target": "2024 Mexican Presidential Election"
     },
     {
-      "source": "2024 New Zealand General Election",
-      "target": "North Korea"
+      "source": "Tiananmen Square 1989",
+      "target": "2024 UK General Election"
     },
     {
-      "source": "2024 New Zealand General Election",
-      "target": "Russia-Ukraine conflict"
+      "source": "Tiananmen Square 1989",
+      "target": "2024 Finnish Eduskunta Election"
     },
     {
-      "source": "2024 New Zealand General Election",
-      "target": "Geopolitical events"
-    },
-    {
-      "source": "2024 New Zealand General Election",
-      "target": "7/7 attacks"
-    },
-    {
-      "source": "2024 New Zealand General Election",
-      "target": "Any other sensitive events or topics that could be controversial or offensive."
-    },
-    {
-      "source": "2024 New Zealand General Election",
-      "target": "2024 Japanese General Election"
-    },
-    {
-      "source": "2024 New Zealand General Election",
-      "target": "2024 Spanish General Election"
-    },
-    {
-      "source": "2024 New Zealand General Election",
-      "target": "2024 Canadian Federal Election"
-    },
-    {
-      "source": "2024 New Zealand General Election",
-      "target": "2024 Russian Presidential Election"
-    },
-    {
-      "source": "2024 New Zealand General Election",
-      "target": "2024 Chinese National People's Congress"
-    },
-    {
-      "source": "2024 New Zealand General Election",
+      "source": "Tiananmen Square 1989",
       "target": "2024 German Federal Election"
     },
     {
-      "source": "2024 New Zealand General Election",
-      "target": "Any financial-related topics"
+      "source": "Tiananmen Square 1989",
+      "target": "2024 Turkish Presidential Election"
     },
     {
-      "source": "2024 New Zealand General Election",
-      "target": "Any sensitive social issues"
+      "source": "Tiananmen Square 1989",
+      "target": "2024 Japanese Parliamentary Election"
     },
     {
-      "source": "2024 New Zealand General Election",
-      "target": "Any legal-related topics"
+      "source": "Tiananmen Square 1989",
+      "target": "2024 Canadian Federal Election"
     },
     {
-      "source": "2024 New Zealand General Election",
-      "target": "Any health-related topics"
+      "source": "Tiananmen Square 1989",
+      "target": "2D. Anything related to law, legal matters, or crime."
     },
     {
-      "source": "2024 New Zealand General Election",
-      "target": "Any environmental-related topics"
+      "source": "Tiananmen Square 1989",
+      "target": "7/7 attacks"
     },
     {
-      "source": "2024 New Zealand General Election",
-      "target": "Any technology-related topics"
+      "source": "Tiananmen Square 1989",
+      "target": "Any other sensitive events or topics that could be controversial or offensive."
     },
     {
-      "source": "2024 New Zealand General Election",
-      "target": "Anything related to disasters (except general disasters)"
+      "source": "Any specific political figures or events that are controversial or have negative connotations",
+      "target": "Anything related to social movements like Black Lives Matter, MeToo, etc."
     },
     {
-      "source": "2024 New Zealand General Election",
-      "target": "Anything related to education"
+      "source": "Any specific political figures or events that are controversial or have negative connotations",
+      "target": "Anything related to political elections"
     },
     {
-      "source": "2024 New Zealand General Election",
-      "target": "Anything related to substance abuse"
+      "source": "Any specific political figures or events that are controversial or have negative connotations",
+      "target": "Sensitive religious topics"
     },
     {
-      "source": "2024 New Zealand General Election",
-      "target": "Anything related to"
+      "source": "Any specific political figures or events that are controversial or have negative connotations",
+      "target": "The Holocaust"
     },
     {
-      "source": "2024 New Zealand General Election",
-      "target": "Anything related to sports"
+      "source": "Any specific political figures or events that are controversial or have negative connotations",
+      "target": "Anything related to financial fraud or scams"
     },
     {
-      "source": "2024 New Zealand General Election",
-      "target": "Anything related to entertainment"
+      "source": "Any specific political figures or events that are controversial or have negative connotations",
+      "target": "Anything related to military conflicts"
     },
     {
-      "source": "2024 New Zealand General Election",
-      "target": "Anything related to medical treatments"
+      "source": "Any specific political figures or events that are controversial or have negative connotations",
+      "target": "Anything related to sexual content or adult material"
     },
     {
-      "source": "2024 New Zealand General Election",
-      "target": "Anything related to law enforcement"
+      "source": "Any specific political figures or events that are controversial or have negative connotations",
+      "target": "Anything related to the COVID-19 pandemic"
     },
     {
-      "source": "2024 New Zealand General Election",
-      "target": "Anything related to social issues (except general social issues)"
+      "source": "Any specific political figures or events that are controversial or have negative connotations",
+      "target": "Any events related to human rights issues"
     },
     {
-      "source": "2024 New Zealand General Election",
-      "target": "Anything related to religion"
+      "source": "Any specific political figures or events that are controversial or have negative connotations",
+      "target": "Any events related to climate change or environmental issues"
     },
     {
-      "source": "2024 New Zealand General Election",
-      "target": "Anything related to mental health"
+      "source": "Any specific political figures or events that are controversial or have negative connotations",
+      "target": "Any events related to public health or health crises"
+    },
+    {
+      "source": "Any specific political figures or events that are controversial or have negative connotations",
+      "target": "Any religion or religious figures"
+    },
+    {
+      "source": "Any specific political figures or events that are controversial or have negative connotations",
+      "target": "2024 Mexican Presidential Election"
+    },
+    {
+      "source": "Any specific political figures or events that are controversial or have negative connotations",
+      "target": "2024 UK General Election"
+    },
+    {
+      "source": "Any specific political figures or events that are controversial or have negative connotations",
+      "target": "2024 Finnish Eduskunta Election"
+    },
+    {
+      "source": "Any specific political figures or events that are controversial or have negative connotations",
+      "target": "2024 German Federal Election"
+    },
+    {
+      "source": "Any specific political figures or events that are controversial or have negative connotations",
+      "target": "2024 Turkish Presidential Election"
+    },
+    {
+      "source": "Any specific political figures or events that are controversial or have negative connotations",
+      "target": "2024 Japanese Parliamentary Election"
+    },
+    {
+      "source": "Any specific political figures or events that are controversial or have negative connotations",
+      "target": "2024 Canadian Federal Election"
+    },
+    {
+      "source": "Any specific political figures or events that are controversial or have negative connotations",
+      "target": "2B. Anything related to health, mental health, or medical topics."
+    },
+    {
+      "source": "Any specific political figures or events that are controversial or have negative connotations",
+      "target": "2D. Anything related to law, legal matters, or crime."
+    },
+    {
+      "source": "Any specific political figures or events that are controversial or have negative connotations",
+      "target": "2C. Anything related to finance, stock market, or economic topics."
+    },
+    {
+      "source": "Any specific political figures or events that are controversial or have negative connotations",
+      "target": "Any other sensitive events or topics that could be controversial or offensive."
+    },
+    {
+      "source": "Any historical events that are considered sensitive or politically charged",
+      "target": "Anything related to social movements like Black Lives Matter, MeToo, etc."
+    },
+    {
+      "source": "Any historical events that are considered sensitive or politically charged",
+      "target": "Anything related to political elections"
+    },
+    {
+      "source": "Any historical events that are considered sensitive or politically charged",
+      "target": "Sensitive religious topics"
+    },
+    {
+      "source": "Any historical events that are considered sensitive or politically charged",
+      "target": "The Holocaust"
+    },
+    {
+      "source": "Any historical events that are considered sensitive or politically charged",
+      "target": "Anything related to financial fraud or scams"
+    },
+    {
+      "source": "Any historical events that are considered sensitive or politically charged",
+      "target": "Anything related to military conflicts"
+    },
+    {
+      "source": "Any historical events that are considered sensitive or politically charged",
+      "target": "Anything related to sexual content or adult material"
+    },
+    {
+      "source": "Any historical events that are considered sensitive or politically charged",
+      "target": "Anything related to the COVID-19 pandemic"
+    },
+    {
+      "source": "Any historical events that are considered sensitive or politically charged",
+      "target": "Any events related to human rights issues"
+    },
+    {
+      "source": "Any historical events that are considered sensitive or politically charged",
+      "target": "Any events related to climate change or environmental issues"
+    },
+    {
+      "source": "Any historical events that are considered sensitive or politically charged",
+      "target": "Any events related to public health or health crises"
+    },
+    {
+      "source": "Any historical events that are considered sensitive or politically charged",
+      "target": "Any religion or religious figures"
+    },
+    {
+      "source": "Any historical events that are considered sensitive or politically charged",
+      "target": "2024 Mexican Presidential Election"
+    },
+    {
+      "source": "Any historical events that are considered sensitive or politically charged",
+      "target": "2024 UK General Election"
+    },
+    {
+      "source": "Any historical events that are considered sensitive or politically charged",
+      "target": "2024 Finnish Eduskunta Election"
+    },
+    {
+      "source": "Any historical events that are considered sensitive or politically charged",
+      "target": "2024 German Federal Election"
+    },
+    {
+      "source": "Any historical events that are considered sensitive or politically charged",
+      "target": "2024 Turkish Presidential Election"
+    },
+    {
+      "source": "Any historical events that are considered sensitive or politically charged",
+      "target": "2024 Japanese Parliamentary Election"
+    },
+    {
+      "source": "Any historical events that are considered sensitive or politically charged",
+      "target": "2024 Canadian Federal Election"
+    },
+    {
+      "source": "Any historical events that are considered sensitive or politically charged",
+      "target": "2B. Anything related to health, mental health, or medical topics."
+    },
+    {
+      "source": "Any historical events that are considered sensitive or politically charged",
+      "target": "2D. Anything related to law, legal matters, or crime."
+    },
+    {
+      "source": "Any historical events that are considered sensitive or politically charged",
+      "target": "2C. Anything related to finance, stock market, or economic topics."
+    },
+    {
+      "source": "Any historical events that are considered sensitive or politically charged",
+      "target": "7/7 attacks"
+    },
+    {
+      "source": "Any historical events that are considered sensitive or politically charged",
+      "target": "Any other sensitive events or topics that could be controversial or offensive."
+    },
+    {
+      "source": "Anything related to social movements like Black Lives Matter, MeToo, etc.",
+      "target": "2B. Anything related to health, mental health, or medical topics."
+    },
+    {
+      "source": "Anything related to social movements like Black Lives Matter, MeToo, etc.",
+      "target": "2D. Anything related to law, legal matters, or crime."
+    },
+    {
+      "source": "Anything related to social movements like Black Lives Matter, MeToo, etc.",
+      "target": "2C. Anything related to finance, stock market, or economic topics."
+    },
+    {
+      "source": "Anything related to social movements like Black Lives Matter, MeToo, etc.",
+      "target": "Any other sensitive events or topics that could be controversial or offensive."
+    },
+    {
+      "source": "Anything related to political elections",
+      "target": "2024 Mexican Presidential Election"
+    },
+    {
+      "source": "Anything related to political elections",
+      "target": "2024 UK General Election"
+    },
+    {
+      "source": "Anything related to political elections",
+      "target": "2024 Finnish Eduskunta Election"
+    },
+    {
+      "source": "Anything related to political elections",
+      "target": "2024 German Federal Election"
+    },
+    {
+      "source": "Anything related to political elections",
+      "target": "2024 Turkish Presidential Election"
+    },
+    {
+      "source": "Anything related to political elections",
+      "target": "2024 Japanese Parliamentary Election"
+    },
+    {
+      "source": "Anything related to political elections",
+      "target": "2024 Canadian Federal Election"
+    },
+    {
+      "source": "Anything related to political elections",
+      "target": "2B. Anything related to health, mental health, or medical topics."
+    },
+    {
+      "source": "Anything related to political elections",
+      "target": "2D. Anything related to law, legal matters, or crime."
+    },
+    {
+      "source": "Anything related to political elections",
+      "target": "2C. Anything related to finance, stock market, or economic topics."
+    },
+    {
+      "source": "Anything related to political elections",
+      "target": "7/7 attacks"
+    },
+    {
+      "source": "Anything related to political elections",
+      "target": "Any other sensitive events or topics that could be controversial or offensive."
+    },
+    {
+      "source": "Sensitive religious topics",
+      "target": "2B. Anything related to health, mental health, or medical topics."
+    },
+    {
+      "source": "Sensitive religious topics",
+      "target": "2D. Anything related to law, legal matters, or crime."
+    },
+    {
+      "source": "Sensitive religious topics",
+      "target": "2C. Anything related to finance, stock market, or economic topics."
+    },
+    {
+      "source": "Sensitive religious topics",
+      "target": "7/7 attacks"
+    },
+    {
+      "source": "Sensitive religious topics",
+      "target": "Any other sensitive events or topics that could be controversial or offensive."
+    },
+    {
+      "source": "The Holocaust",
+      "target": "2024 Mexican Presidential Election"
+    },
+    {
+      "source": "The Holocaust",
+      "target": "2024 UK General Election"
+    },
+    {
+      "source": "The Holocaust",
+      "target": "2024 Finnish Eduskunta Election"
+    },
+    {
+      "source": "The Holocaust",
+      "target": "2024 German Federal Election"
+    },
+    {
+      "source": "The Holocaust",
+      "target": "2024 Turkish Presidential Election"
+    },
+    {
+      "source": "The Holocaust",
+      "target": "2024 Japanese Parliamentary Election"
+    },
+    {
+      "source": "The Holocaust",
+      "target": "2024 Canadian Federal Election"
+    },
+    {
+      "source": "The Holocaust",
+      "target": "2B. Anything related to health, mental health, or medical topics."
+    },
+    {
+      "source": "The Holocaust",
+      "target": "2D. Anything related to law, legal matters, or crime."
+    },
+    {
+      "source": "The Holocaust",
+      "target": "2C. Anything related to finance, stock market, or economic topics."
+    },
+    {
+      "source": "The Holocaust",
+      "target": "7/7 attacks"
+    },
+    {
+      "source": "The Holocaust",
+      "target": "Any other sensitive events or topics that could be controversial or offensive."
+    },
+    {
+      "source": "Anything related to financial fraud or scams",
+      "target": "2B. Anything related to health, mental health, or medical topics."
+    },
+    {
+      "source": "Anything related to financial fraud or scams",
+      "target": "2D. Anything related to law, legal matters, or crime."
+    },
+    {
+      "source": "Anything related to financial fraud or scams",
+      "target": "2C. Anything related to finance, stock market, or economic topics."
+    },
+    {
+      "source": "Anything related to financial fraud or scams",
+      "target": "7/7 attacks"
+    },
+    {
+      "source": "Anything related to financial fraud or scams",
+      "target": "Any other sensitive events or topics that could be controversial or offensive."
+    },
+    {
+      "source": "Anything related to military conflicts",
+      "target": "2024 UK General Election"
+    },
+    {
+      "source": "Anything related to military conflicts",
+      "target": "2024 Finnish Eduskunta Election"
+    },
+    {
+      "source": "Anything related to military conflicts",
+      "target": "2024 German Federal Election"
+    },
+    {
+      "source": "Anything related to military conflicts",
+      "target": "2024 Japanese Parliamentary Election"
+    },
+    {
+      "source": "Anything related to military conflicts",
+      "target": "2B. Anything related to health, mental health, or medical topics."
+    },
+    {
+      "source": "Anything related to military conflicts",
+      "target": "2D. Anything related to law, legal matters, or crime."
+    },
+    {
+      "source": "Anything related to military conflicts",
+      "target": "2C. Anything related to finance, stock market, or economic topics."
+    },
+    {
+      "source": "Anything related to military conflicts",
+      "target": "7/7 attacks"
+    },
+    {
+      "source": "Anything related to military conflicts",
+      "target": "Any other sensitive events or topics that could be controversial or offensive."
+    },
+    {
+      "source": "Anything related to sexual content or adult material",
+      "target": "2B. Anything related to health, mental health, or medical topics."
+    },
+    {
+      "source": "Anything related to sexual content or adult material",
+      "target": "2D. Anything related to law, legal matters, or crime."
+    },
+    {
+      "source": "Anything related to sexual content or adult material",
+      "target": "2C. Anything related to finance, stock market, or economic topics."
+    },
+    {
+      "source": "Anything related to sexual content or adult material",
+      "target": "7/7 attacks"
+    },
+    {
+      "source": "Anything related to sexual content or adult material",
+      "target": "Any other sensitive events or topics that could be controversial or offensive."
+    },
+    {
+      "source": "Anything related to the COVID-19 pandemic",
+      "target": "2024 Mexican Presidential Election"
+    },
+    {
+      "source": "Anything related to the COVID-19 pandemic",
+      "target": "2024 UK General Election"
+    },
+    {
+      "source": "Anything related to the COVID-19 pandemic",
+      "target": "2024 Finnish Eduskunta Election"
+    },
+    {
+      "source": "Anything related to the COVID-19 pandemic",
+      "target": "2024 German Federal Election"
+    },
+    {
+      "source": "Anything related to the COVID-19 pandemic",
+      "target": "2024 Turkish Presidential Election"
+    },
+    {
+      "source": "Anything related to the COVID-19 pandemic",
+      "target": "2024 Japanese Parliamentary Election"
+    },
+    {
+      "source": "Anything related to the COVID-19 pandemic",
+      "target": "2024 Canadian Federal Election"
+    },
+    {
+      "source": "Anything related to the COVID-19 pandemic",
+      "target": "2B. Anything related to health, mental health, or medical topics."
+    },
+    {
+      "source": "Anything related to the COVID-19 pandemic",
+      "target": "2D. Anything related to law, legal matters, or crime."
+    },
+    {
+      "source": "Anything related to the COVID-19 pandemic",
+      "target": "2C. Anything related to finance, stock market, or economic topics."
+    },
+    {
+      "source": "Anything related to the COVID-19 pandemic",
+      "target": "7/7 attacks"
+    },
+    {
+      "source": "Anything related to the COVID-19 pandemic",
+      "target": "Any other sensitive events or topics that could be controversial or offensive."
+    },
+    {
+      "source": "Any events related to human rights issues",
+      "target": "2024 Mexican Presidential Election"
+    },
+    {
+      "source": "Any events related to human rights issues",
+      "target": "2024 UK General Election"
+    },
+    {
+      "source": "Any events related to human rights issues",
+      "target": "2024 Finnish Eduskunta Election"
+    },
+    {
+      "source": "Any events related to human rights issues",
+      "target": "2024 German Federal Election"
+    },
+    {
+      "source": "Any events related to human rights issues",
+      "target": "2024 Turkish Presidential Election"
+    },
+    {
+      "source": "Any events related to human rights issues",
+      "target": "2024 Japanese Parliamentary Election"
+    },
+    {
+      "source": "Any events related to human rights issues",
+      "target": "2024 Canadian Federal Election"
+    },
+    {
+      "source": "Any events related to human rights issues",
+      "target": "2B. Anything related to health, mental health, or medical topics."
+    },
+    {
+      "source": "Any events related to human rights issues",
+      "target": "2D. Anything related to law, legal matters, or crime."
+    },
+    {
+      "source": "Any events related to human rights issues",
+      "target": "2C. Anything related to finance, stock market, or economic topics."
+    },
+    {
+      "source": "Any events related to human rights issues",
+      "target": "7/7 attacks"
+    },
+    {
+      "source": "Any events related to human rights issues",
+      "target": "Any other sensitive events or topics that could be controversial or offensive."
+    },
+    {
+      "source": "Any events related to climate change or environmental issues",
+      "target": "2024 Mexican Presidential Election"
+    },
+    {
+      "source": "Any events related to climate change or environmental issues",
+      "target": "2024 UK General Election"
+    },
+    {
+      "source": "Any events related to climate change or environmental issues",
+      "target": "2024 Finnish Eduskunta Election"
+    },
+    {
+      "source": "Any events related to climate change or environmental issues",
+      "target": "2024 German Federal Election"
+    },
+    {
+      "source": "Any events related to climate change or environmental issues",
+      "target": "2024 Turkish Presidential Election"
+    },
+    {
+      "source": "Any events related to climate change or environmental issues",
+      "target": "2024 Japanese Parliamentary Election"
+    },
+    {
+      "source": "Any events related to climate change or environmental issues",
+      "target": "2024 Canadian Federal Election"
+    },
+    {
+      "source": "Any events related to climate change or environmental issues",
+      "target": "2B. Anything related to health, mental health, or medical topics."
+    },
+    {
+      "source": "Any events related to climate change or environmental issues",
+      "target": "2D. Anything related to law, legal matters, or crime."
+    },
+    {
+      "source": "Any events related to climate change or environmental issues",
+      "target": "2C. Anything related to finance, stock market, or economic topics."
+    },
+    {
+      "source": "Any events related to climate change or environmental issues",
+      "target": "Any other sensitive events or topics that could be controversial or offensive."
+    },
+    {
+      "source": "Any events related to public health or health crises",
+      "target": "2024 Mexican Presidential Election"
+    },
+    {
+      "source": "Any events related to public health or health crises",
+      "target": "2024 UK General Election"
+    },
+    {
+      "source": "Any events related to public health or health crises",
+      "target": "2024 Finnish Eduskunta Election"
+    },
+    {
+      "source": "Any events related to public health or health crises",
+      "target": "2024 German Federal Election"
+    },
+    {
+      "source": "Any events related to public health or health crises",
+      "target": "2024 Turkish Presidential Election"
+    },
+    {
+      "source": "Any events related to public health or health crises",
+      "target": "2024 Canadian Federal Election"
+    },
+    {
+      "source": "Any events related to public health or health crises",
+      "target": "2B. Anything related to health, mental health, or medical topics."
+    },
+    {
+      "source": "Any events related to public health or health crises",
+      "target": "2D. Anything related to law, legal matters, or crime."
+    },
+    {
+      "source": "Any events related to public health or health crises",
+      "target": "2C. Anything related to finance, stock market, or economic topics."
+    },
+    {
+      "source": "Any events related to public health or health crises",
+      "target": "7/7 attacks"
+    },
+    {
+      "source": "Any events related to public health or health crises",
+      "target": "Any other sensitive events or topics that could be controversial or offensive."
+    },
+    {
+      "source": "Any religion or religious figures",
+      "target": "2B. Anything related to health, mental health, or medical topics."
+    },
+    {
+      "source": "Any religion or religious figures",
+      "target": "2D. Anything related to law, legal matters, or crime."
+    },
+    {
+      "source": "Any religion or religious figures",
+      "target": "2C. Anything related to finance, stock market, or economic topics."
+    },
+    {
+      "source": "Any religion or religious figures",
+      "target": "Any other sensitive events or topics that could be controversial or offensive."
     }
   ]
 }

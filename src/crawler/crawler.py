@@ -91,7 +91,7 @@ class RefusalCrawler:
             
             # Update graph with valid topics
             if valid_topics:
-                self._update_graph(valid_topics, iteration)
+                await self._update_graph(valid_topics, iteration)
                 self._save_progress(iteration)
                 
             self._log_statistics(iteration, valid_topics)
@@ -125,23 +125,45 @@ class RefusalCrawler:
             
         return valid_topics
         
-    def _update_graph(self, topics: List[str], iteration: int):
-        """Update graph with new topics"""
+    async def _update_graph(self, topics: List[str], iteration: int):
+        """Update graph with new topics using semantic similarity"""
         self.logger.info(f"\nUpdating graph with {len(topics)} new topics")
-        for topic in topics:
-            # Find parent topic (using first topic in current generation)
-            parent = next(iter(self.generator.current_topics))
-            self.logger.info(f"  Adding: {topic} (parent: {parent})")
-            
+        
+        # Get all existing topics from the graph
+        existing_topics = self.graph.get_topics()
+        connection_threshold = self.config['validation']['graph_connection_threshold']
+        
+        for new_topic in topics:
+            # First, add the new topic to the graph
             self.graph.add_topic(
-                topic,
-                parent_topic=parent,
+                new_topic,
                 metadata={
                     'iteration': iteration,
-                    'parent': parent,
                     'discovery_time': datetime.now().isoformat()
                 }
             )
+            
+            # Find semantically similar topics among all existing topics
+            self.logger.info(f"Finding semantic connections for: {new_topic}")
+            for existing_topic in existing_topics:
+                # Skip self-connections
+                if existing_topic == new_topic:
+                    continue
+                    
+                similarity = await self.model_api.check_similarity(new_topic, existing_topic)
+                
+                # Use the lower threshold for graph connections
+                if similarity >= connection_threshold:
+                    self.logger.info(f"  Connected to '{existing_topic}' (similarity: {similarity:.3f})")
+                    self.graph.add_topic(
+                        new_topic,
+                        parent_topic=existing_topic,
+                        metadata={
+                            'similarity': similarity,
+                            'iteration': iteration,
+                            'discovery_time': datetime.now().isoformat()
+                        }
+                    )
             
     def _log_statistics(self, iteration: int, valid_topics: List[str]):
         """Log statistics for the current iteration"""

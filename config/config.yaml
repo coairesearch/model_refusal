@@ -10,8 +10,9 @@ model:
   top_p: 0.9  # optional, defaults to 0.9
 
 validation:
-  similarity_threshold: 0.85  # Same as embedding ensemble threshold
+  similarity_threshold: 0.85  # High threshold for duplicate detection
   min_models_agreement: 2  # Same as embedding ensemble min_models_agreement
+  graph_connection_threshold: 0.50  # Lower threshold for creating semantic connections in the graph
 
 embedding:
   device:
