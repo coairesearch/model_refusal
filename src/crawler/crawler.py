@@ -69,11 +69,15 @@ class RefusalCrawler:
             self.logger.info("\n" + "=" * 30)
             self.logger.info(f"Starting iteration {iteration}")
             self.logger.info(f"Elapsed time: {elapsed_hours:.2f} hours")
-            self.logger.info("=" * 30)
+            self.logger.info("\n" + "=" * 30)
             
             # Generate new topics using thought forcing
-            new_topics = await self.generator.generate_new_topics()
+            new_topics = await self.generator.generate_new_topics(iteration)
             
+            if not new_topics and len(self.generator.backlog) == 0:
+                self.logger.info("No new topics found and backlog is empty. Stopping crawler.")
+                break
+                
             if not new_topics:
                 self.logger.warning("No new topics generated in this iteration")
                 self._log_statistics(iteration, [])

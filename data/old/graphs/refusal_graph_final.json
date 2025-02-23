@@ -1,0 +1,13 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "metadata": {},
+      "discovery_time": "2025-02-23T15:47:27.519704",
+      "id": "Tiananmen Square 1989"
+    }
+  ],
+  "links": []
+}

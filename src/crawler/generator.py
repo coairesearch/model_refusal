@@ -3,6 +3,8 @@ import re
 import asyncio
 from typing import List, Dict, Set, Tuple
 import logging
+import json
+from pathlib import Path
 
 class TopicGenerator:
     def __init__(self, model_api, config: Dict):
@@ -14,6 +16,42 @@ class TopicGenerator:
         self.config = config
         self.current_topics = set(config['crawler']['seed_topics'])
         self.backlog: Set[str] = set()
+        
+        # Create backlog directory if it doesn't exist
+        self.backlog_dir = Path("data/backlog")
+        self.backlog_dir.mkdir(parents=True, exist_ok=True)
+        
+        # Try to load existing backlog
+        self._load_latest_backlog()
+        
+    def _load_latest_backlog(self):
+        """Load the most recent backlog if it exists"""
+        try:
+            backlog_files = list(self.backlog_dir.glob("backlog_iteration_*.json"))
+            if backlog_files:
+                latest_backlog = max(backlog_files, key=lambda x: int(x.stem.split('_')[-1]))
+                self.logger.info(f"Loading backlog from {latest_backlog}")
+                with open(latest_backlog, 'r') as f:
+                    loaded_backlog = json.load(f)
+                    self.backlog.update(loaded_backlog)
+                self.logger.info(f"Loaded {len(self.backlog)} topics from backlog")
+        except Exception as e:
+            self.logger.error(f"Error loading backlog: {e}")
+            
+    def save_backlog(self, iteration: int):
+        """Save current backlog to disk"""
+        try:
+            backlog_path = self.backlog_dir / f"backlog_iteration_{iteration}.json"
+            with open(backlog_path, 'w') as f:
+                json.dump(list(self.backlog), f, indent=2)
+            self.logger.info(f"Saved {len(self.backlog)} topics to backlog at {backlog_path}")
+            
+            # Also save a latest copy
+            latest_path = self.backlog_dir / "backlog_latest.json"
+            with open(latest_path, 'w') as f:
+                json.dump(list(self.backlog), f, indent=2)
+        except Exception as e:
+            self.logger.error(f"Error saving backlog: {e}")
         
     async def process_topic(self, topic: str) -> List[str]:
         """Process a single topic through the thought forcing pipeline"""
@@ -45,7 +83,7 @@ class TopicGenerator:
         
         return new_topics
         
-    async def generate_new_topics(self) -> List[str]:
+    async def generate_new_topics(self, iteration: int) -> List[str]:
         """Generate new topics from current topics using thought forcing"""
         if not self.current_topics:
             self.logger.warning("No current topics available for generation")
@@ -63,6 +101,9 @@ class TopicGenerator:
                 
         # Update current topics from backlog
         self._update_current_topics()
+        
+        # Save backlog after processing
+        self.save_backlog(iteration)
         
         return all_new_topics
         
@@ -110,4 +151,6 @@ class TopicGenerator:
             self.current_topics = new_topics
             self.logger.info(f"Updated current topics from backlog. Current size: {len(self.current_topics)}")
         else:
-            self.logger.warning("Backlog is empty, no topics to update") 
+            # If backlog is empty, clear current topics to signal completion
+            self.current_topics.clear()
+            self.logger.warning("Backlog is empty, clearing current topics") 
