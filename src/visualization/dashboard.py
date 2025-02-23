@@ -2,6 +2,7 @@ import streamlit as st
 import networkx as nx
 from pyvis.network import Network
 import json
+import yaml
 from pathlib import Path
 import pandas as pd
 import plotly.graph_objects as go
@@ -15,6 +16,32 @@ def load_graph_data(file_path):
         graph_data = json.load(f)
     G = nx.node_link_graph(graph_data)
     return G
+
+def get_available_runs():
+    """Get list of available runs"""
+    data_dir = Path("data")
+    runs = sorted([d for d in data_dir.glob("run_*") if d.is_dir()],
+                 key=lambda x: x.name,
+                 reverse=True)  # Most recent first
+    return runs
+
+def format_run_name(run_dir):
+    """Format run directory name into readable datetime"""
+    try:
+        # Extract timestamp from run_YYYYMMDD_HHMMSS format
+        timestamp = run_dir.name.split('_', 1)[1]  # Get everything after first underscore
+        dt = datetime.strptime(timestamp, '%Y%m%d_%H%M%S')
+        return f"Run from {dt.strftime('%Y-%m-%d %H:%M:%S')}"
+    except (IndexError, ValueError):
+        return f"Run {run_dir.name}"  # Fallback if parsing fails
+
+def load_run_config(run_dir):
+    """Load configuration for a specific run"""
+    config_path = run_dir / "config.yaml"
+    if config_path.exists():
+        with open(config_path, 'r') as f:
+            return yaml.safe_load(f)
+    return None
 
 def create_pyvis_graph(G, height="750px"):
     """Create an interactive Pyvis graph"""
@@ -77,10 +104,32 @@ def main():
     
     st.title("Refusal Graph Visualization Dashboard")
     
-    # Get list of graph files
-    graph_dir = Path("data/graphs")
+    # Run selection
+    runs = get_available_runs()
+    if not runs:
+        st.error("No runs found in the data directory.")
+        return
+        
+    selected_run = st.selectbox(
+        "Select a run to visualize",
+        runs,
+        format_func=format_run_name
+    )
+    
+    # Load and display run configuration
+    run_config = load_run_config(selected_run)
+    if run_config:
+        with st.expander("Run Configuration"):
+            st.json(run_config)
+    
+    # Get list of graph files for selected run
+    graph_dir = selected_run / "graphs"
     graph_files = sorted(graph_dir.glob("refusal_graph_*.json"), 
                         key=lambda x: int(x.stem.split('_')[-1]) if x.stem.split('_')[-1].isdigit() else float('inf'))
+    
+    if not graph_files:
+        st.warning(f"No graph files found in {graph_dir}")
+        return
     
     # File selection
     selected_file = st.selectbox(

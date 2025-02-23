@@ -15,6 +15,11 @@ class RefusalCrawler:
     def __init__(self, config_path: str):
         # Store config path and setup logging first
         self.config_path = config_path
+        
+        # Create run directory with timestamp
+        self.run_id = datetime.now().strftime("%Y%m%d_%H%M%S")
+        self.run_dir = Path("data") / f"run_{self.run_id}"
+        self._setup_directories()
         self._setup_logging()
         
         # Load configuration
@@ -22,10 +27,14 @@ class RefusalCrawler:
         with open(config_path, 'r') as f:
             self.config = yaml.safe_load(f)
             
+        # Save config for this run
+        self._save_run_config()
+            
         # Print initial setup information
         self.logger.info("=" * 50)
         self.logger.info("Starting Refusal Crawler")
         self.logger.info("=" * 50)
+        self.logger.info(f"Run ID: {self.run_id}")
         self.logger.info(f"Model: {self.config['model']['name']}")
         self.logger.info(f"Initial seed topics: {self.config['crawler']['seed_topics']}")
         self.logger.info(f"Max iterations: {self.config['crawler']['max_iterations']}")
@@ -34,7 +43,7 @@ class RefusalCrawler:
             
         # Initialize components
         self.model_api = ModelAPI(config=self.config)
-        self.generator = TopicGenerator(self.model_api, self.config)
+        self.generator = TopicGenerator(self.model_api, self.config, run_dir=self.run_dir)
         self.validator = TopicValidator(self.model_api, self.config)
         self.graph = RefusalGraph()
         
@@ -173,9 +182,21 @@ class RefusalCrawler:
         self.logger.info(f"Topics found this iteration: {len(valid_topics)}")
         self.logger.info(f"Backlog size: {len(self.generator.backlog)}")
         
+    def _setup_directories(self):
+        """Create directory structure for this run"""
+        # Create main run directory and subdirectories
+        for subdir in ['backlog', 'crawl_history', 'graphs']:
+            (self.run_dir / subdir).mkdir(parents=True, exist_ok=True)
+        
+    def _save_run_config(self):
+        """Save the configuration used for this run"""
+        config_path = self.run_dir / "config.yaml"
+        with open(config_path, 'w') as f:
+            yaml.safe_dump(self.config, f)
+        
     def _setup_logging(self):
         """Setup logging configuration"""
-        log_dir = Path("data/crawl_history")
+        log_dir = self.run_dir / "crawl_history"
         log_dir.mkdir(parents=True, exist_ok=True)
         
         # Clear any existing handlers to avoid duplicate logging
@@ -197,17 +218,13 @@ class RefusalCrawler:
         
     def _save_progress(self, iteration):
         """Save current progress"""
-        # Create directories if they don't exist
-        for dir_path in ["data/graphs", "data/crawl_history"]:
-            os.makedirs(dir_path, exist_ok=True)
-            
         # Save graph
-        graph_path = f"data/graphs/refusal_graph_{iteration}.json"
+        graph_path = self.run_dir / "graphs" / f"refusal_graph_{iteration}.json"
         self.graph.save_graph(graph_path)
         self.logger.info(f"Saved graph to {graph_path}")
         
         # Save known topics list
-        topics_path = f"data/crawl_history/known_topics_{iteration}.txt"
+        topics_path = self.run_dir / "crawl_history" / f"known_topics_{iteration}.txt"
         with open(topics_path, 'w') as f:
             for topic in self.validator.get_known_topics():
                 f.write(f"{topic}\n")

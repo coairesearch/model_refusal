@@ -25,7 +25,7 @@ The AI Refusal Crawler is designed to:
 - 📝 Detailed logging and analytics
 - ⚡ Asynchronous operation for better performance
 - 🎯 Ensemble-based similarity matching
-- 🖥️ Local model hosting with GPU acceleration
+- 🖥️ Model hosting using NDIF Cluster
 
 ## Requirements
 
@@ -43,32 +43,59 @@ git clone https://github.com/yourusername/ai-refusal-crawler.git
 cd ai-refusal-crawler
 ```
 
-2. Install dependencies:
+2. Install main dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Copy the example config and update with your settings:
+3. Install visualization dependencies:
+```bash
+pip install -r src/visualization/requirements.txt
+```
+
+4. Copy the example config and update with your settings:
 ```bash
 cp config/config.yaml config/config.local.yaml
 ```
 
-4. Update `config/config.local.yaml` with your:
-   - OpenAI API key
+5. Update `config/config.local.yaml` with your:
+   - NDIF host and API key
    - GPU settings (CUDA device selection)
    - Model configurations
 
 ## Usage
 
-1. Basic usage:
+### Running the Crawler
+
+1. Basic crawler usage:
 ```bash
 python main.py --config config/config.yaml
 ```
 
-2. Monitor progress:
+2. Run with debug logging:
+```bash
+python main.py --config config/config.yaml --debug
+```
+
+### Running the Visualization Dashboard
+
+1. Start the Streamlit dashboard:
+```bash
+streamlit run src/visualization/dashboard.py
+```
+
+The dashboard will be available at `http://localhost:8501` and provides:
+- Interactive network visualization of the refusal graph
+- Graph metrics and statistics
+- Downloadable node data
+- Timeline view of topic discovery
+
+### Monitoring Progress
+
 - Check `data/crawl_history/crawler.log` for real-time progress
 - View discovered topics in `data/crawl_history/known_topics_*.txt`
 - Examine graph snapshots in `data/graphs/refusal_graph_*.json`
+- Use the visualization dashboard for interactive exploration
 
 ## Configuration
 
@@ -96,10 +123,6 @@ refusal-crawler/
 
 ```
 
-
-## Contributing
-
-Contributions are welcome! See our todo list in `docs/todo-list-kanban.md` for planned improvements.
 
 ## License
 

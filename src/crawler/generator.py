@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 
 class TopicGenerator:
-    def __init__(self, model_api, config: Dict):
+    def __init__(self, model_api, config: Dict, run_dir: Path):
         # Setup logger
         self.logger = logging.getLogger("TopicGenerator")
         self.logger.setLevel(logging.INFO)
@@ -17,8 +17,8 @@ class TopicGenerator:
         self.current_topics = set(config['crawler']['seed_topics'])
         self.backlog: Set[str] = set()
         
-        # Create backlog directory if it doesn't exist
-        self.backlog_dir = Path("data/backlog")
+        # Use run-specific backlog directory
+        self.backlog_dir = run_dir / "backlog"
         self.backlog_dir.mkdir(parents=True, exist_ok=True)
         
         # Try to load existing backlog

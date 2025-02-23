@@ -6,3 +6,5 @@ src/crawler/__pycache__/*.*
 *.pyz
 *.pywz
 *.pyzw
+temp/
+data/
